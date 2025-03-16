@@ -8,6 +8,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
+        /*
         System.out.print("Lütfen yaşınızı giriniz: ");
 
         int yas = scanner.nextInt();
@@ -23,8 +24,8 @@ public class Main {
         else {
             System.out.println("Araç Kullanamazsınız!");
         }
-
-
+*/
+        
     }
 }
 // else blokları tek başına yazılamaz. if değişkenine bağlı olarak kullanılırlar.
