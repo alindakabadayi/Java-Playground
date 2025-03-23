@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 /**
  * Döngüler
+ *
  * @author alindakabadayi
  * @version 0.2
  */
@@ -11,7 +12,7 @@ public class Main {
 
         System.out.println("\n=== DÖNGÜLER ===\n");
 
-    // for(Başlatma; Koşul; Arttırma veya Azaltma İşlemleri) {}
+        // for(Başlatma; Koşul; Arttırma veya Azaltma İşlemleri) {}
 
 /*
         for (int i = 0; i <= 10; i++) {
@@ -34,9 +35,9 @@ public class Main {
 
     // i < 10 ve j > 0 olduğu zaman ve i'yi 1 arttırmak sürece ve j'yi 1 azaltmak sürece döngü çalışır
 
-*/
 
-    // for döngüsü kullanarak faktoriyel bulma
+
+    // === for döngüsü kullanarak faktoriyel bulma ===
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Bir Sayı Giriniz: ");
@@ -47,6 +48,24 @@ public class Main {
             fact *= i;
             System.out.println("Factorial " + i + ": " + fact);
         }
-    }
+*/
 
+
+        // === While Döngülerini Kullanma ve for Döngülerinden Farkı ===
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Bir Sayı Giriniz: ");
+
+        int sayi = scanner.nextInt();
+        System.out.print("Factorial " + sayi + "!: ");
+
+        int fact = 1;
+
+        while (sayi > 1) {
+            fact *= sayi;
+            sayi--;
+        }
+        System.out.println(fact);
+    }
 }
