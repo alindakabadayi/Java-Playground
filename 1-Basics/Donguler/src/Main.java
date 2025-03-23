@@ -48,7 +48,6 @@ public class Main {
             fact *= i;
             System.out.println("Factorial " + i + ": " + fact);
         }
-*/
 
 
         // === While Döngülerini Kullanma ve for Döngülerinden Farkı ===
@@ -67,5 +66,74 @@ public class Main {
             sayi--;
         }
         System.out.println(fact);
+
+
+
+    // === Sonsuz Döngü Olayı ===
+
+        int i = 0;
+
+        while (i < 10) {
+            System.out.println("i = " + i);
+        }
+
+
+
+    // === do/while Döngüsü ===
+
+    /*
+
+        do {
+            // Koşul doğru olduğu sürece
+            // while'dan farkı; do bloğu koşulu konrol etmeden kesin olarak en az 1 kere çalışmasının garanti olması
+
+            }while (koşul);
+
+    */
+
+
+/*
+    // Sayıların Rakamlarının Toplamı
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Lütfen Bir Sayı Giriniz: ");
+
+        int num = scanner.nextInt();
+
+        int sum = 0;
+
+        // İlk olarak birler basamağı, toplam değişkenine eklenir.
+
+        do {
+            sum += num %10;
+
+            num /= 10;  // Sayı güncellendi
+            System.out.println("Sayı: " + num);
+        }
+        while (num > 0);
+
+        System.out.println("Rakamları Toplamı: " + sum);
+
+*/
+
+
+    // break -> Karşılaşıldığı yerde döngü sonlanır.
+    // continue -> Karşılaşıldığı yerde döngü başa döner.
+
+
+        Scanner scanner = new Scanner(System.in);
+        int islem;
+
+        while (true) {
+            System.out.print("Bir Sayı Giriniz: ");
+            islem = scanner.nextInt();
+
+            if (islem <= 0) {
+                System.out.println("Döngüden çıkılıyor..");
+                break;
+            }
+
+            System.out.println("Girdiğiniz Sayı: " + islem);
+        }
     }
 }
