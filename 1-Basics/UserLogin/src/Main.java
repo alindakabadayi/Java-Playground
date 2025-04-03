@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 /**
  * Kullanıcı Girişi Programı
+ * Kullanıcı adı büyük/küçük harf duyarsız karşılaştırılır.
+ * 3 deneme hakkı vardır.
  * @author alindakabadayi
- * @version 0.1
+ * @version 0.2
  */
 public class Main {
     public static void main(String[] args) {
@@ -27,32 +29,35 @@ public class Main {
             System.out.println("Parola: ");
             String parola = input.nextLine();
 
-            if (kullanici.equals(sys_kullanici_adi) && parola.equals(sys_kullanici_sifre)) {
+            if (kullanici.toLowerCase().equals(sys_kullanici_adi.toLowerCase()) && parola.equals(sys_kullanici_sifre)) {
 
                 System.out.println("Sisteme Giriş Başarılı");
                 break;
+
             }
-            else if (kullanici.equals(sys_kullanici_adi) && !parola.equals(sys_kullanici_sifre)) {
+            else if (kullanici.toLowerCase().equals(sys_kullanici_adi.toLowerCase()) && !parola.equals(sys_kullanici_sifre)) {
 
                 System.out.println("Parolanız Yanlış !");
 
                 giris_hakki--;
                 System.out.println("Giriş Hakkı: " + giris_hakki);
+
             }
-            else if (!kullanici.equals(sys_kullanici_adi)&& parola.equals(sys_kullanici_sifre)) {
+            else if (!kullanici.toLowerCase().equals(sys_kullanici_adi.toLowerCase())&& parola.equals(sys_kullanici_sifre)) {
 
                 System.out.println("Kullanıcı Adınız Yanlış !");
 
                 giris_hakki--;
                 System.out.println("Giriş Hakkı: " + giris_hakki);
+
             }
             else {
                 System.out.println("Kullanıcı Adınız ve Parolanız Yanlış !");
 
                 giris_hakki--;
                 System.out.println("Giriş Hakkı: " + giris_hakki);
-            }
 
+            }
             if (giris_hakki == 0) {
                 System.out.println("Giriş Hakkınız Bitti ! Lütfen Daha Sonra Tekrar Deneyiniz ");
                 break;
