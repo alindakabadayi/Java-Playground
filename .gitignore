@@ -1,11 +1,11 @@
-# IntelliJ
+# macOS system files
+.DS_Store
+
+# IntelliJ project files
 .idea/
 *.iml
 
-# Java
-*.class
+# log ve build dosyaları
+*.log
 out/
 target/
-
-# macOS
-.DS_Store
