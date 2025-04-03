@@ -1,9 +1,11 @@
 # IntelliJ IDEA
 .idea/
 *.iml
-# macOS system files
-.DS_Store
 
-# IntelliJ
-.idea/
-*.iml
+# Java
+*.class
+out/
+target/
+
+# macOS sistem dosyası
+.DS_Store
