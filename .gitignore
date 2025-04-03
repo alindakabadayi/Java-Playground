@@ -1,4 +1,4 @@
-# IntelliJ IDEA
+# IntelliJ
 .idea/
 *.iml
 
@@ -7,5 +7,5 @@
 out/
 target/
 
-# macOS sistem dosyası
+# macOS
 .DS_Store
