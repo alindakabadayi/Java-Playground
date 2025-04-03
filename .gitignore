@@ -1,3 +1,9 @@
 # IntelliJ IDEA
 .idea/
 *.iml
+# macOS system files
+.DS_Store
+
+# IntelliJ
+.idea/
+*.iml
