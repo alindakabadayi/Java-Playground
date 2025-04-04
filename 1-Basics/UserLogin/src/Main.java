@@ -1,3 +1,4 @@
+// Sync testi için eklendi
 import java.util.Scanner;
 
 /**
