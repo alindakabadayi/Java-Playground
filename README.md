@@ -17,8 +17,6 @@ Examples covering basic Java structures, data types, operators, conditional stat
 ### 2-OOP
 Examples covering object-oriented programming principles (in preparation).
 
-### Java-Ground
-Advanced Java applications (coming soon).
 
 ## About the Projects
 
